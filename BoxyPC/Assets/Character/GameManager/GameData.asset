@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea1554747edf1d40872f0e7c35411bd, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  boardSize: 7
+  leaders:
+  - lead: 
+    wins: 0
+  - lead: 
+    wins: 0
+  - lead: 
+    wins: 0
+  - lead: 
+    wins: 0
+  legalMove: {fileID: 8300000, guid: a3bf97f4ca3affd489995efa207f23ae, type: 3}
+  illegalMove: {fileID: 8300000, guid: fd45ece1dbaa02248a449f872028c74c, type: 3}
+  completeBox: {fileID: 8300000, guid: c7e3f60ebda28054785fbb062c908f2b, type: 3}
