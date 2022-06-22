@@ -200,7 +200,7 @@ public class BoardCntrl : MonoBehaviour
                 if (!LegalMove(pegStart, peg))
                 {
                     peg.Illegal();
-                    AudioManager.Instance.SoundIllegalMove();
+                    //AudioManager.Instance.SoundIllegalMove();
                 }
             } 
         }
@@ -238,7 +238,9 @@ public class BoardCntrl : MonoBehaviour
                 Vector3 position = new Vector3(col + 0.5f, row + 0.5f, 0.0f);
                 GameObject block = (player == Player.PLAYER_1) ? player1PreFab : player2PreFab;
 
-                Instantiate(block, position, Quaternion.identity);
+                GameObject go = Instantiate(block, position, Quaternion.identity);
+
+                listGameObject.Add(go);
 
                 AudioManager.Instance.SoundCompleteBox();
             }
