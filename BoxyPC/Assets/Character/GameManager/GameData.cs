@@ -12,7 +12,6 @@ public class GameData : ScriptableObject
 
     [Header("Game Sounds")]
     public AudioClip legalMove;
-    public AudioClip illegalMove;
     public AudioClip completeBox;
 
     public GameData()

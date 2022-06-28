@@ -45,6 +45,16 @@ public class BoardCntrl : MonoBehaviour
         player2Color = Color.black;
     }
 
+    private void OnEnable()
+    {
+        Debug.Log("OnEnable ...");
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("OnDisable ...");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -52,8 +62,6 @@ public class BoardCntrl : MonoBehaviour
         //-----------------------------
         bool leftMouseButton = Input.GetMouseButtonDown(LEFT_MOUSE_BUTTON);
         Vector3 mousePos = Input.mousePosition;
-
-        Debug.Log(player);
 
         switch(player)
         {

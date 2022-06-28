@@ -10,7 +10,6 @@ public class AudioManager : MonoBehaviour
 
     private AudioClip legalMove;
     private AudioClip completeBox;
-    private AudioClip illegalMove;
 
     public static AudioManager Instance = null;
 
@@ -19,13 +18,13 @@ public class AudioManager : MonoBehaviour
     {
         legalMove = gameData.legalMove;
         completeBox = gameData.completeBox;
-        illegalMove = gameData.illegalMove;
 
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-        } else
+        }
+        else
         {
             Destroy(gameObject);
         }
@@ -39,10 +38,5 @@ public class AudioManager : MonoBehaviour
     public void SoundCompleteBox()
     {
         audioSource.PlayOneShot(completeBox);
-    }
-
-    public void SoundIllegalMove()
-    {
-        audioSource.PlayOneShot(illegalMove);
     }
 }
